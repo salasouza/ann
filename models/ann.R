@@ -2,14 +2,16 @@
 #                 ANN PERCEPTRON                                       #
 #----------------------------------------------------------------------#
 
+#----------------------------------------------------------------------
 # Install Packages
 
 library(tidyverse)
 library(ggplot2)
 library(glue)
-#---------------------------------------------------------------------
 
-# load iris data set
+#----------------------------------------------------------------------
+# load iris data set:
+
 data(iris)
 irissubdf <- iris[1:100, c(1, 3, 5)]
 names(irissubdf) <- c("sepal", "petal", "species")
@@ -21,12 +23,15 @@ irissubdf[irissubdf[, 3] == "setosa", 4] <- -1
 x <- irissubdf[, c(1, 2)]
 y <- irissubdf[, 4]
 
-# head and tail of data
+#----------------------------------------------------------------------
+# head and tail of data:
+
 head(x)
 head(y)
 
 summary(irissubdf)
 
+#----------------------------------------------------------------------
 # ANN applied
 
 ## Parameters:
@@ -94,6 +99,8 @@ ann <- function(x,y,eta,nt){
 
 #end function   
 }
+#----------------------------------------------------------------------
+# Appling that function:
 
 z <- ann(x,y,0.1,20); z
 
@@ -104,3 +111,5 @@ plot(1:20, z,
      ylab="errors")
 
 title("Errors vs epoch - learning rate eta = 1")
+
+#----------------------------------------------------------------------
