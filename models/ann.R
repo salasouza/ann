@@ -40,7 +40,8 @@ summary(irissubdf)
 
 ann <- function(x,y,eta,nt){
   
-  # Building w and e0:
+  #' Building w and e0:
+
   w <- rep(0,dim(x)[2] + 1)
   e0 <- rep(0, nt)
   
@@ -54,13 +55,13 @@ ann <- function(x,y,eta,nt){
       print(glue('\n\n#-> W0j:{w[2:length(w)]}'))
       print(glue('\n\n#-> B0j:{w[1] }'))
       
-      # Induced Field: 
+      #' Induced Field: 
       
       signal <- sum(w[2:length(w)] * as.numeric(x[j, ])) + w[1]
       print(glue('\n\n>>>>>> Induced Field:{signal}\n\n'))
       print(w)
       
-      # Function of Activation:
+      #' Function of Activation:
       
       if(signal < 0){
         prediction <- -1
@@ -70,7 +71,7 @@ ann <- function(x,y,eta,nt){
           print(glue('signal >= 0: {prediction}'))
         }
       
-      # Update: 
+      #' Update: 
       
       dw <- eta * (y[j] - prediction) * c(1, as.numeric(x[j, ]))
       w <- w + dw
@@ -80,19 +81,19 @@ ann <- function(x,y,eta,nt){
       print(glue('\n\n>>>>>> dW:{dw}\n\n'))
       print(glue('\n\n>>>>>> nW:{w}\n\n'))
       
-      # Update error function:
+      #' Update error function:
       
       if ((y[j] - prediction) != 0.0) {
         e0[i] <- e0[i] + 1}
       
-    } # end second loop
+    } #' end second loop
     
-  } #end first loop
+  } #' end first loop
     
   print(w)
   return(e0)
 
-#end function   
+#' end function   
 }
 
 #'---------------------------------------------------------------------------
