@@ -1,9 +1,9 @@
 # ANN
 
 The objective this project is to study the Artificial Neural Network using that Perceptron.The figure below show that 
-scruture of perceptron. The input values (x, i=1,..., d) with its weights (w, i=1,...,d) are combinated for result induce filed valures, that values are 
+structure of perceptron. The input values `(x, i=1,..., d)` with its weights (w, i=1,...,d) are combinated for result induce filed values, that values are scaled by using activation function (sigma or degree function) to values 0 or 1. 
 
-
+#### Structure of Perceptron
 
 ![Alt text](image.png)
 
