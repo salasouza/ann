@@ -7,40 +7,10 @@
 library(tidyverse)
 library(ggplot2)
 library(glue)
-
-# Creating datasets 
-
-# n = numbers of samples
-# min = Minimal random value
-# max = Maximal random value
-# add = Numbers of iterations
-
-# createDataset <- function(n,min, max, add){
-# 
-#   g1x = runif(n, min = min, max = max)
-#   g1y = runif(n, min = min, max = max)
-# 
-#   g2x = runif(n, min = min+add, max = max+add)
-#   g2y = runif(n, min = min+add, max = max+add)
-# 
-#   gx = c(g1x, g2x)
-#   gy = c(g1y, g2y)
-#   group = c(rep(-1,n), rep(1,n))
-#   df <- data.frame(group, gx, gy)
-#   cat('Dataset Builded!!','\n')
-#   print(df)
-# 
-# 
-# }
-# 
-# df <- createDataset(50,0,1,0.5); df
-
-# Dataset Iris
-
+#---------------------------------------------------------------------
 
 # load iris data set
 data(iris)
-
 irissubdf <- iris[1:100, c(1, 3, 5)]
 names(irissubdf) <- c("sepal", "petal", "species")
 head(irissubdf)
@@ -51,22 +21,12 @@ irissubdf[irissubdf[, 3] == "setosa", 4] <- -1
 x <- irissubdf[, c(1, 2)]
 y <- irissubdf[, 4]
 
-x
-y
 # head and tail of data
 head(x)
 head(y)
 
 summary(irissubdf)
 
-# Data Manipulation
-
-# x <- df[, c(2,3)];x
-# y <- df[, 1]; y
-# 
-# x
-# 
-# y
 # ANN applied
 
 ## Parameters:
@@ -137,8 +97,6 @@ ann <- function(x,y,eta,nt){
 
 z <- ann(x,y,0.1,20); z
 
-z
-
 plot(1:20, z, 
      type="l", lwd=2, 
      col="red", 
@@ -146,60 +104,3 @@ plot(1:20, z,
      ylab="errors")
 
 title("Errors vs epoch - learning rate eta = 1")
-
-###
-
-irisdata <- iris[, c(1, 3, 5)]
-names(irisdata) <- c("sepal", "petal", "species")
-
-x <- iris[, 1:4] 
-names(x) <- tolower(names(x))
-
-# create species labels
-y <- rep(-1, dim(x)[1])
-y[iris[, 5] == "virginica"] <- 1
-
-x
-y
-
-
-z <- ann(x,y,0.01,20); z
-
-z
-
-plot(1:20, z, 
-     type="l", lwd=2, 
-     col="red", 
-     xlab="epoch #", 
-     ylab="errors")
-
-title("Errors vs epoch - learning rate eta = 1")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
