@@ -1,16 +1,16 @@
-# ANN - Artificil Neural Network
+# ANN - Artificial Neural Network
 
 #### Overview about Perceptron
 
 <p align="jutify">
 The objective of this project is to study the Artificial Neural Network using that Perceptron.
-The figure below shows the structure of perceptron. The input values <b>(x, i=1,..., d)</b> with its weights <b>(w, i=1,...,d)</b> are combinated for result induce field values, that values are scaled by using activation function <b>(sigma or degree function)</b> to values 0 or 1.<br></br>
-<b>Equation of Neuron:</b>
+The figure below shows the structure of perceptron. The input values <b>(x, i=1,..., d)</b> with their weights <b>(w, i=1,...,d)</b> are combined with bias values <b>()</b> to result in induced field values. These values are scaled using activation function <b>(sigma or degree function)</b> to values 0 or 1.<br></br>
+<b>[1] Equation of Neuron:</b>
 $$\left(v_0 =\sum_{i=1}^d (x_i*w_i )+b_i\right)$$
-The solution that equation too known how <b>induced field</b> is processed by activation function as how shows in the below equation.<br><br/>
-<b>Activation Function:</b>
+The solution to this equation[1], also known as <b>induced field</b>, is processed by activation function as shown in the equation below [2].<br><br/>
+<b>[2] Activation Function:</b>
 $$y^0 = f(v_0)$$
-Though a feedforward process the calibration of new weights and bias can be realized and this result in the training of network for prediction or learning the solution of problem. This mean that network is ready for to identify values how AND, XOR or any problem that can be linear sepated. 
+Through a feedforward process, the calibration of new weights and bias can be realized and this results in the training of the network for predicting or learning the solution of the problem. After this calibration, the network is ready to identify solutions to problems such as AND, XOR or any problems that can be linearly separated. 
 </p>
 
 #### Structure of Perceptron
