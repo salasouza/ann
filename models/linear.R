@@ -1,13 +1,12 @@
-# ============================================================== #
-# 
-# Undertanding Linear function                                  #
-#
-# ============================================================== #
+#'---------------------------------------------------------------------------
+#' Undertanding Linear function                                  
+#'---------------------------------------------------------------------------
 
-# Linear Function 
-# f(x) = a*x
-# f'(x) = a
-# So: 
+#'---------------------------------------------------------------------------
+#' Linear Function 
+#' f(x) = a*x
+#' f'(x) = a
+#' So: 
 
 linear <- function(x){
   print(x)
@@ -23,9 +22,9 @@ for(i in list){
   plot(input, 
        linear(input), 
        col='red', 
-       main=paste0("Número de inputs:", i),
+       main=paste0("Number of inputs:", i),
        xlab='Inputs',
        ylab='Linear(x)')
-  hist(linear(input), main=paste0("Número de inputs:", i))
+  hist(linear(input), main=paste0("Number of inputs:", i))
   
 }

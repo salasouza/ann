@@ -1,10 +1,16 @@
-# Creating datasets 
+#'---------------------------------------------------------------------------
+#' Creating datasets 
+#'---------------------------------------------------------------------------
 
-# n = numbers of samples
-# min = Minimal random value
-# max = Maximal random value
-# add = Numbers of iterations
+#'---------------------------------------------------------------------------
+#' Parameters::
+#' 
+#' n = numbers of samples
+#' min = Minimal random value
+#' max = Maximal random value
+#' add = Numbers of iterations
 
+#'---------------------------------------------------------------------------
 # createDataset <- function(n,min, max, add){
 # 
 #   g1x = runif(n, min = min, max = max)

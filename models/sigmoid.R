@@ -1,16 +1,15 @@
-# ============================================================== #
-# 
-# Undertanding Sigmoid function                                  #
-#
-# ============================================================== #
 
-# Sigmoid Function 
+#'---------------------------------------------------------------------------
+#' Undertanding Sigmoid function 
+#'---------------------------------------------------------------------------
+
+#'---------------------------------------------------------------------------
+#' Sigmoid Function 
 
 sig <- function(z){
   value <- 1/(1+exp(-z))
   print(value)
 }
-
 
 list <- list(100,1000,10000,100000)
 
@@ -21,7 +20,7 @@ for(i in list){
   plot(input, 
        sig(input), 
        col='red', 
-       main=paste0("Número de inputs:", i))
-  hist(sig(input), main=paste0("Número de inputs:", i))
+       main=paste0("Number of inputs:", i))
+  hist(sig(input), main=paste0("Number of inputs:", i))
   
 }

@@ -1,10 +1,9 @@
-# ============================================================== #
-# 
-# Undertanding Tanh function                                  #
-#
-# ============================================================== #
+#'---------------------------------------------------------------------------
+#' Undertanding Tanh function                                  
+#'---------------------------------------------------------------------------
 
-# Sigmoid Function 
+#'---------------------------------------------------------------------------
+#' Sigmoid Function 
 
 tanh <- function(x){
   value <- (exp(x)-exp(-x))/(exp(x)+exp(-x))
@@ -21,9 +20,9 @@ for(i in list){
   plot(input, 
        tanh(input), 
        col='red', 
-       main=paste0("Número de inputs:", i),
+       main=paste0("Numbers of inputs:", i),
        xlab='Inputs',
        ylab='Tanh(x)')
-  hist(tanh(input), main=paste0("Número de inputs:", i))
+  hist(tanh(input), main=paste0("Number of inputs:", i))
   
 }
