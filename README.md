@@ -4,8 +4,10 @@
 
 <p align="jutify">
 The objective this project is to study the Artificial Neural Network using that Perceptron.
-The figure below shows the structure of perceptron. The input values <b>(x, i=1,..., d)</b> with its weights `(w, i=1,...,d)` are combinated for result induce field values, that values are scaled by using activation function `(sigma or degree function)` to values 0 or 1.
-Though a feedforward process the calibration of new weights and bias can be realized and this result in the treinament of network for prediction or learning the solution of problem. This mean that network is ready for to identify values how AND, XOR or any problem that can be linear sepated. 
+The figure below shows the structure of perceptron. The input values <b>(x, i=1,..., d)</b> with its weights <b>(w, i=1,...,d)</b> are combinated for result induce field values, that values are scaled by using activation function <b>(sigma or degree function)</b> to values 0 or 1.
+**The Cauchy-Schwarz Inequality**
+$$\left( \y^0) =( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+Though a feedforward process the calibration of new weights and bias can be realized and this result in the training of network for prediction or learning the solution of problem. This mean that network is ready for to identify values how AND, XOR or any problem that can be linear sepated. 
 </p>
 
 #### Structure of Perceptron
