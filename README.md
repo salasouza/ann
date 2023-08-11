@@ -2,7 +2,9 @@
 
 The objective this project is to study the Artificial Neural Network using that Perceptron.
 
-## To Build enviroment in Anaconda
+![Alt text](image.png)
+
+### To Build enviroment in Anaconda
  
 ```
 conda create --name "name_env" 
@@ -12,13 +14,13 @@ conda deactivate
 source ~/.bashrc               # init anaconda base
 ```
 
-## Activate R:
+### Activate R:
 
 ```
 conda activate r-environment
 ```
 
-## Update R:
+### Update R:
 
 ```
 conda install -c conda-forge r-base=4.X.X
