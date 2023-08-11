@@ -27,8 +27,9 @@ conda install -c conda-forge r-base=4.X.X
 ## Scripts:
 
 ```
-source init_env.sh    # To initialization the enviroment
-source stopped_env.sh # Deactivating the enviroment
+source init.sh    # To initialization the enviroment
+source stop.sh    # Deactivating the enviroment
+source deploy.sh  # To initialization the deployment
 ```
 ## Install packages:
 
