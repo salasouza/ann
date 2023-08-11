@@ -1,7 +1,12 @@
 # ANN
 
-The objective this project is to study the Artificial Neural Network using that Perceptron.The figure below show that 
-structure of perceptron. The input values `(x, i=1,..., d)` with its weights (w, i=1,...,d) are combinated for result induce filed values, that values are scaled by using activation function (sigma or degree function) to values 0 or 1. 
+#### Overview about Perceptron
+
+The objective this project is to study the Artificial Neural Network using that Perceptron.
+
+The figure below shows the structure of perceptron. The input values `(x, i=1,..., d)` with its weights `(w, i=1,...,d)` are combinated for result induce field values, that values are scaled by using activation function `(sigma or degree function)` to values 0 or 1.
+
+Though a feedforward process the calibration of new weights and bias can be realized and this result in the treinament of network for prediction or learning the solution of problem. This mean that network is ready for to identify values how AND, XOR or any problem that can be linear sepated. 
 
 #### Structure of Perceptron
 
