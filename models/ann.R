@@ -3,13 +3,14 @@
 #'---------------------------------------------------------------------------
 
 #'---------------------------------------------------------------------------
-# Install Packages
+# Install Packages: 
+
 library(tidyverse)
 library(ggplot2)
 library(glue)
 
 #'---------------------------------------------------------------------------
-#' Data Manipulation
+#' Data Manipulation:
 
 data(iris)
 irissubdf <- iris[1:100, c(1, 3, 5)]

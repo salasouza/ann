@@ -1,6 +1,6 @@
 # ANN
 
-The objective this project is to study time series of cryptocurrencies.
+The objective this project is to study the Artificial Neural Network using that Perceptron.
 
 ## To Build enviroment in Anaconda
  
@@ -12,35 +12,35 @@ conda deactivate
 source ~/.bashrc               # init anaconda base
 ```
 
-# Activate R:
+## Activate R:
 
 ```
 conda activate r-environment
 ```
 
-# Update R:
+## Update R:
 
 ```
 conda install -c conda-forge r-base=4.X.X
 ```
 
-## Scripts:
+### Scripts:
 
 ```
 source init.sh    # To initialization the enviroment
 source stop.sh    # Deactivating the enviroment
 source deploy.sh  # To initialization the deployment
 ```
-## Install packages:
+### Install packages:
 
 ```
 conda install -c conda-forge "name_package"
 ``` 
-## To open jupyter notebook:
+### To open jupyter notebook:
 ```
 jupyter notebook --port=8889 --no-browser
 ```
-## Build script Shell
+### Build script Shell
 ```
 chmod +x "name_script.sh"
 ```
