@@ -2,11 +2,15 @@
 
 ### Overview about Perceptron ##
 <p align="jutify">
-The objective of this project is to study the Artificial Neural Network using that Perceptron.
+The objective of this project is study the Perceptron as a first step for understanding how artificial neural network works it.
 </p>
 
 <p align="justify">
-Perceptron is an algorithm based on biological neuron created by Frank Rosemblatt at 1955. The input values <b>(x, i=1,..., d)</b> with their weights <b>(w, i=1,...,d)</b> are combined with bias values <b>()</b> to result in induced field values. These values are scaled using activation function <b>(sigma or degree function)</b> to values 0 or 1. 
+Perceptron is an algorithm the linear classification based on biological neuron created by Frank Rosemblatt at 1955. The perceptron is an neural network with one layer and to categorized as unsupervisioned learning and it can used for solutions of binaries problens. 
+<p>
+
+<p align='justify'>
+The input values <b>(x, i=1,..., d)</b> with their weights <b>(w, i=1,...,d)</b> are combined with bias values <b>()</b> to result in induced field values. These values are scaled using activation function <b>(sigma or degree function)</b> to values 0 or 1. 
 The figure below shows the structure of perceptron. 
 </p>
 
