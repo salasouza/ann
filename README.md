@@ -2,7 +2,7 @@
 
 ### Overview about Perceptron ##
 <p align="jutify">
-The objective of this project is study the Perceptron as a first step for understanding how artificial neural network works it.
+The objective of this project is study the Perceptron as first step for understanding how artificial neural network works it.
 </p>
 
 <p align="justify">
@@ -23,7 +23,7 @@ The solution to this equation [1], also known as <b>induced field</b>, is proces
 $$y^0 = f(v_0)$$
 
 <p align="justify">
-Through a feedforward process, the calibration [3] of new weights and bias can be realized and this results in the training of the network for predicting or learning the solution of the problem. After this calibration, the network is ready to identify solutions to problems such as AND, XOR or any problems that can be linearly separated. 
+Through a feedforward process, the calibration of new weights [4,6] and bias [5,7] can be realized and this results in the training of the network for predicting or learning the solution of the problem. After this calibration, the network is ready to identify solutions to problems such as AND, XOR or any problems that can be linearly separated. 
 </p>
 
 <b>[3] Calculate Errors:</b>
