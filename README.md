@@ -10,7 +10,7 @@ Perceptron is an algorithm the linear classification based on biological neuron 
 <p>
 
 <p align='justify'>
-The input values <b>(x, i=1,..., d)</b> with their weights <b>(w, i=1,...,d)</b> are combined with bias values <b>()</b> to result in induced field values. These values are scaled using activation function <b>(sigma or degree function)</b> to values 0 or 1. 
+The input values <b>(x, i=1,..., d)</b> with their weights <b>(w, i=1,...,d)</b> are combined with bias values to result in induced field values. These values are scaled using activation function <b>(sigma or degree function)</b> to values 0 or 1. 
 The figure below shows the structure of perceptron. 
 </p>
 
